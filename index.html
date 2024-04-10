@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Educational RSA Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div>
+            <h1>Educational RSA Calculator</h1>
+            <span>
+                Simple, lightweight and web-based RSA calculator for educational purposes.<br />
+                Demonstrates the working principles of the RSA encryption, the Extended Euclidean Algorithm and the Square-and-Multiply algorithm.
+            </span>
+
+            <div id="div_main">
+                <div id="div_rsa">
+                    <h2>Input Values</h2>
+                    <div class="inputdiv">
+                        <label for="input_p">p =</label>
+                        <input type="text" id="input_p" name="input_p" value="5">
+                        <br>
+                        <label for="input_p">q =</label>
+                        <input type="text" id="input_q" name="input_p" value="17">
+                        <br>
+                        <label for="input_p">e =</label>
+                        <input type="text" id="input_e" name="input_p" value="3">
+                        <br>
+                        <button id="btn_genran">Generate random values</button>
+                        <button id="btn_calculate">Calculate</button>
+                    </div>
+            
+                    <h2>Results</h2>
+            
+                    <div id="div_results"></div>
+                </div>
+
+                <div id="div_endecrypt" style="display: none;">
+                    <h2>Encrypt/Decrypt</h2>
+
+                    <div class="inputdiv">
+                        <label for="input_text" id="lbl_input_text">x = </label>
+                        <input type="text" id="input_text" name="input_text">
+
+                        <div id="radio">
+                            <input type="radio" id="radio_encrypt" name="radio" value="encrypt" checked="checked">
+                            <label for="radio_encrypt">Encrypt</label>
+                            <input type="radio" id="radio_decrypt" name="radio" value="decrypt">
+                            <label for="radio_decrypt">Decrypt</label>
+                        </div>
+
+                        <button id="btn_endecrypt">Encrypt/Decrypt</button>
+                    </div>
+
+                    <div id="div_endecrypt_results"></div>
+                </div>
+            </div>
+
+            <script src="main.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+@media (min-width: 1200px) {
+    #div_main {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #div_rsa {
+        width: 50%;
+        float: left;
+    }
+    
+    #div_endecrypt {
+        width: 50%;
+        float: right;
+    }
+
+    #img_background {
+        display: none; /* hide for Hugo */
+        position: absolute;
+        image-rendering: pixelated;
+        width: 1056px;
+        height: 128px;
+        top: calc(50% - 64px);
+        left: calc(50% - 528px);
+        opacity: 0.03;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1200px) {
+    #div_rsa {
+        padding-bottom: 10px;
+    }
+
+    #img_background {
+        position: absolute;
+        image-rendering: pixelated;
+        width: 528px;
+        height: 64px;
+        top: calc(50% - 32px);
+        left: calc(50% - 264px);
+        opacity: 0.03;
+        z-index: -1;
+    }
+}
+
+input[type=text] {
+    width: 80%;
+    margin: 4px 0;
+}
+
+.inputdiv {
+    width: 40vw;
+    min-width: 400px;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/* Make site more compact */
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 4px 0;
+}
