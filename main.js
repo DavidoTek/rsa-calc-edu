@@ -180,6 +180,7 @@ btn_genran.onclick = function() {
 
 
 btn_calculate.onclick = function() {
+    div_results.innerHTML = "";
     div_endecrypt.style.display = "none";
     div_endecrypt_results.innerHTML = "";
     key_n = 0; key_e = 0; key_d = 0;
