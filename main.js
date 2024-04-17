@@ -200,7 +200,7 @@ btn_calculate.onclick = function() {
     }
 
     if (e < 2) {
-        div_results.innerHTML += "<p style=\"color: red;\">e needs to be greater than 0!</p>";
+        div_results.innerHTML += "<p style=\"color: red;\">e needs to be greater than 1!</p>";
         return;
     }
 
