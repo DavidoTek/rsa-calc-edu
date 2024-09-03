@@ -207,11 +207,16 @@ btn_calculate.onclick = function() {
     div_results.innerHTML = "";
 
     /* 1. Print the Primes */
-    div_results.innerHTML += "<h3>1. Primes</h3>";
     let p_is_prime = is_prime(p);
-    div_results.innerHTML += "<p>p = <b>" + p + "</b> " + (p_is_prime ? "&#9989;" : "&#10060;") + "</p>";
     let q_is_prime = is_prime(q);
-    div_results.innerHTML += "<p>q = <b>" + q + "</b> " + (q_is_prime ? "&#9989;" : "&#10060;") + "</p>";
+
+    div_results.innerHTML += "<h3>1. Primes</h3>";
+    div_results.innerHTML +=
+        "<div>" +
+            "<span class=\"primespan\">p = <b>" + p + "</b> " + (p_is_prime ? "&#9989;" : "&#10060;") + "</span>" +
+            "<span class=\"primespan\">q = <b>" + q + "</b> " + (q_is_prime ? "&#9989;" : "&#10060;") + "</span>" +
+        "</div>";
+    
 
     if (!p_is_prime || !q_is_prime) {
         div_results.innerHTML += "<p style=\"color: red;\">p and q need to be prime!</p>";
@@ -219,13 +224,12 @@ btn_calculate.onclick = function() {
     }
 
     /* 2. Calculate n */
-    let n = p * q;
-    div_results.innerHTML += "<h3>2. Calculate n</h3>";
-    div_results.innerHTML += "n = p * q = " + p + " * " + q + " = <b>" + n + "</b></p>";
-
     /* 3. Calculate phi(n) */
+    let n = p * q;
     let phi_n = (p - 1) * (q - 1);
-    div_results.innerHTML += "<h3>3. Calculate phi(n)</h3>";
+
+    div_results.innerHTML += "<h3>2/3. Calculate n and phi(n)</h3>";
+    div_results.innerHTML += "<p>n = p * q = " + p + " * " + q + " = <b>" + n + "</b></p>";
     div_results.innerHTML += "<p>phi(n) = (p - 1) * (q - 1) = (" + p + " - 1) * (" + q + " - 1) = <b>" + phi_n + "</b></p>";
 
     /* 4/5. Check e and calculate d */

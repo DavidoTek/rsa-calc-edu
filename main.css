@@ -1,4 +1,9 @@
 @media (min-width: 1200px) {
+    #inputdiv {
+        width: 40vw;
+        min-width: 400px;
+    }
+
     #div_main {
         width: 100%;
         overflow: hidden;
@@ -45,13 +50,16 @@
 }
 
 input[type=text] {
-    width: 80%;
-    margin: 4px 0;
+    width: 60px;
+    margin: 4px 32px 4px 0;
 }
 
-.inputdiv {
-    width: 40vw;
-    min-width: 400px;
+.inputsubdiv {
+    float: left;
+}
+
+.primespan {
+    margin-right: 24px;
 }
 
 table, tr, td, th {
