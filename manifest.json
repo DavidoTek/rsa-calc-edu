@@ -1,0 +1,16 @@
+{
+    "short_name": "RSA-Calc-Edu",
+    "name": "Educational RSA Calculator",
+    "description": "Educational RSA calculator demonstrating the Extended Euclidean Algorithm and the Square-and-Multiply algorithm.",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
